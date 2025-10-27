@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import Home from "./pages/Home";
 import About from "./pages/About";
 import Manifesto from "./pages/Manifesto";
+import Vision from "./pages/Vision";
 
 export default function App() {
   return (
@@ -20,7 +21,7 @@ export default function App() {
         <Routes>
           {/* 👇 This is the default route */}
           <Route path="/" element={<Home />} />
-<Route path="/vision" element={<Vision/>} />
+          <Route path="/vision" element={<Vision/>} />
           <Route path="/about" element={<About />} />
           <Route path="/manifesto" element={<Manifesto />} />
 
