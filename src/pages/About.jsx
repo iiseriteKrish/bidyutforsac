@@ -16,6 +16,12 @@ export default function About() {
         More importantly, I’m not part of any group or circle of influence. I’m just a regular student — one who has personally faced the same challenges of room allotment, maintenance delays, and communication gaps that most of us deal with. I understand what it means to feel unheard, and that’s exactly what I’m here to change.
 
   </p>
+      <h3 className="text-2xl font-bold mb-6">Core Values</h3>
+<div className="flex justify-center gap-6 flex-wrap">
+{['Transparency', 'Compassion', 'Honesty'].map((val) => (
+<Card key={val} className="w-56 shadow-md border-blue-200">
+<CardContent className="py-6 text-lg font-semibold text-blue-700">{val}</CardContent>
+</Card>
     </motion.div>
        
   );
