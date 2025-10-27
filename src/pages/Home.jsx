@@ -14,7 +14,7 @@ export default function Home() {
         Candidate for General Secretary, SAC (Hostel & Transport) 2025–26
       </p>
       <p className="mt-4 text-xl font-medium text-yellow-600">
-        “Vote for Integrity • Vote for Fairness • Vote for Every Student”
+        “Vote for Transparancy • Vote for Compassion • Vote for Honesty”
       </p>
     </motion.div>
   );
