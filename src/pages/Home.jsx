@@ -44,7 +44,7 @@ export default function Home() {
       >
         {/* Profile Image */}
         <motion.img
-          src= "/your-photo.jpg" // 🔗 Replace with your actual image path or URL
+          src= "https://drive.google.com/uc?export=view&id=1R9SO399_BSGp0UybdKJgS29LX2_2kb6E" // 🔗 Replace with your actual image path or URL
           alt="Bidyut Bhakat"
           className="w-40 h-40 object-cover rounded-full mx-auto mb-6 shadow-md border-4 border-blue-200"
           whileHover={{ scale: 1.05 }}
