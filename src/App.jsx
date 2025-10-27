@@ -14,9 +14,7 @@ export default function App() {
         {/* Navbar */}
         <nav className="bg-blue-900 text-white shadow-lg sticky top-0 z-50">
           <div className="max-w-5xl mx-auto px-4 py-3 flex justify-between items-center">
-            <Link to="/" className="text-xl font-bold hover:text-yellow-300 transition-colors">
-              Bidyut Bhakat
-            </Link>
+           
             <div className="space-x-4">
               <Link to="/" className="hover:text-yellow-300">Home</Link>
               <Link to="/manifesto" className="hover:text-yellow-300">Manifesto</Link>
@@ -45,7 +43,7 @@ export default function App() {
         {/* Footer */}
         <footer className="bg-blue-900 text-white text-center py-5">
           <p className="text-sm">© 2025 Bidyut Bhakat | General Secretary Candidate</p>
-          <p className="text-xs text-blue-200">Built with integrity • React + Tailwind + Motion</p>
+          <p className="text-xs text-blue-200">Built with transparancy in mind</p>
         </footer>
       </div>
     </Router>
