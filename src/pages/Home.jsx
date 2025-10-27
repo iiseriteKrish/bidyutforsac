@@ -56,12 +56,12 @@ export default function Home() {
           Why Vote for Me?
         </h2>
         <p className="text-gray-700 leading-relaxed text-justify">
-          Unlike many candidates, I represent the perspective of a regular
-          student — someone who understands the real struggles faced by those
+          Unlike many candidates, I represent the perspective of a <strong>regular
+          student</strong> — someone who understands the real struggles faced by those
           without strong networks or administrative connections.
         </p>
         <p className="text-gray-700 leading-relaxed text-justify mt-3">
-          My leadership in the Nature Club shows I can manage logistics,
+          My leadership in the <strong>Nature Club</strong> shows I can manage logistics,
           coordinate with officials, and deliver results responsibly. I know how
           to get things done — from organizing bus trips and arranging
           accommodations to fixing issues like camera repairs and permissions.
