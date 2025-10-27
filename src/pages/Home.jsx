@@ -44,11 +44,12 @@ export default function Home() {
       >
         {/* Profile Image */}
         <motion.img
-          src= "https://drive.google.com/uc?export=view&id=1R9SO399_BSGp0UybdKJgS29LX2_2kb6E" // 🔗 Replace with your actual image path or URL
-          alt="Bidyut Bhakat"
-          className="w-40 h-40 object-cover rounded-full mx-auto mb-6 shadow-md border-4 border-blue-200"
-          whileHover={{ scale: 1.05 }}
-        />
+  src="https://drive.google.com/uc?export=view&id=YOUR_FILE_ID"
+  alt="Bidyut Bhakat"
+  className="w-48 h-48 rounded-full mx-auto mb-6 shadow-md border-4 border-blue-200 object-cover object-center bg-gray-100"
+  whileHover={{ scale: 1.05 }}
+  onError={(e) => (e.target.style.backgroundColor = '#f8f9fa')}
+/>
 
         {/* Why Vote for Me Section */}
         <h2 className="text-2xl font-bold text-blue-900 mb-4">
