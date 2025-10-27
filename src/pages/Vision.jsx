@@ -11,9 +11,9 @@ export default function Vision() {
     >
       <h2 className="text-3xl font-semibold text-purple-700 mb-4">My Vision</h2>
       <p className="text-gray-700 text-lg max-w-2xl mx-auto">
-        I dream of a campus where every student’s voice counts,
-        where fairness and empathy guide decisions,
-        and where leadership means service — not privilege.
+        My dream is to build a campus where no student feels unheard, no issue remains hidden, and no decision is taken without the people it affects. Together, we can create a transparent, compassionate, and fair IISER Kolkata — where every student’s voice matters.
+
+
       </p>
     </motion.div>
   );
