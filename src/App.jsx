@@ -14,13 +14,11 @@ export default function App() {
         {/* Navbar */}
         <nav className="bg-blue-900 text-white shadow-lg sticky top-0 z-50">
           <div className="max-w-5xl mx-auto px-4 py-3 flex justify-between items-center">
-            <Link to="/" className="text-xl font-bold hover:text-yellow-300 transition-colors">
-              Bidyut Bhakat
-            </Link>
+
             <div className="space-x-4">
               <Link to="/" className="hover:text-yellow-300">Home</Link>
               <Link to="/manifesto" className="hover:text-yellow-300">Manifesto</Link>
-              <Link to="/about" className="hover:text-yellow-300">About Me</Link>
+              <Link to="/about" className="hover:text-yellow-300">About_Me</Link>
               <Link to="/vision" className="hover:text-yellow-300">Vision</Link>
             </div>
           </div>
