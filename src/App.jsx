@@ -11,6 +11,7 @@ export default function App() {
         {/* Navbar */}
         <nav className="flex justify-center gap-6 py-4 bg-blue-700 text-white shadow-md">
           <Link to="/" className="hover:text-yellow-300 transition">Home</Link>
+          <Link to="/vision" className="hover:text-yellow-300 transition">Vision</Link>
           <Link to="/about" className="hover:text-yellow-300 transition">About</Link>
           <Link to="/manifesto" className="hover:text-yellow-300 transition">Manifesto</Link>
         </nav>
@@ -19,7 +20,7 @@ export default function App() {
         <Routes>
           {/* 👇 This is the default route */}
           <Route path="/" element={<Home />} />
-
+<Route path="/vision" element={<Vision/>} />
           <Route path="/about" element={<About />} />
           <Route path="/manifesto" element={<Manifesto />} />
 
