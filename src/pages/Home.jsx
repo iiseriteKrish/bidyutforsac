@@ -4,7 +4,7 @@ import { Card, CardContent } from "@/components/ui/card"
 import { ScrollArea } from "@/components/ui/scroll-area"
 import { ArrowRight } from "lucide-react"
 
-export default function CampaignWebsite() {
+export default function Home() {
   return (
     <div className="bg-gradient-to-b from-blue-50 to-white text-gray-800">
       {/* Hero Section */}
