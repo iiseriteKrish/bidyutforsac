@@ -2,12 +2,12 @@ import React from "react";
 
 export default function Manifesto() {
   const points = [
-    ["Commitment to Transparency", "Open publication of all hostel and transport records, meeting minutes, and allocations."],
-    ["Protection of Student Rights", "No forced collections; dignity and consent come first.", "ugbjjwv3rogbuiwcviebhw"],
-    ["Fair Room Allotment", "Allotment lists made public and verifiable by students."],
-    ["Hygiene & Accountability", "Strict inspection and immediate maintenance action."],
-    ["Transparent Transport", "UPI payments, clear schedules, and affordable student excursions."],
-    ["Reform-Oriented Discipline", "Counselling instead of punishment — fairness over fear."],
+    ["Commitment to Transparency", ["Open publication of all hostel and transport records, meeting minutes, and allocations."]],
+    ["Protection of Student Rights", ["No forced collections; dignity and consent come first.", "ugbjjwv3rogbuiwcviebhw"]],
+    ["Fair Room Allotment", ["Allotment lists made public and verifiable by students."]],
+    ["Hygiene & Accountability", ["Strict inspection and immediate maintenance action."]],
+    ["Transparent Transport", ["UPI payments, clear schedules, and affordable student excursions."]],
+    ["Reform-Oriented Discipline", ["Counselling instead of punishment — fairness over fear."]],
   ];
 
   return (
