@@ -6,27 +6,37 @@ export default function Manifesto() {
       "Commitment to Transparency",
       [
         "Open publication of all hostel and transport records, meeting minutes, and allocations.",
+        "Open publication of meeting minutes and CWH decisions.",
+        "Monthly updates on new hostel construction progress.",
+        "Public decision polls for all key administrative consultations."
       ],
     ],
     [
       "Protection of Student Rights",
       [
-        "No forced collections; dignity and consent come first.",
-        "Fair treatment and respect for every student.",
+        "No late night room visits for monetary collection.",
+        "Respect for privacy — no unauthorized room entry.",
+        "Strict cleanliness checks and accountability enforcements."
       ],
     ],
     [
       "Fair Room Allotment",
-      ["Allotment lists made public and verifiable by students."],
+      ["Reinstating SAC-led transparent allotment process.",
+       "Real-time room data visibility for all students.",
+       "Alternative arrangements if required (Visitor’s Hostel or Faculty Quarters)."
+      ],
     ],
     [
       "Hygiene & Accountability",
-      ["Strict inspection and immediate maintenance action."],
+      ["Regular hostel hygiene inspections.",
+      "Zero tolerance for tampering/diluting with handwash and other amenities."],
     ],
     [
       "Transparent Transport",
       [
-        "UPI payments, clear schedules, and affordable student excursions.",
+        "Fair access to institute buses for all clubs.",
+        "Published fare structure & UPI payments.",
+        "Excursion funds for regular student outings."
       ],
     ],
     [
@@ -38,7 +48,7 @@ export default function Manifesto() {
   return (
     <div className="space-y-10 py-10 px-6 text-gray-800">
       <h2 className="text-3xl font-semibold text-blue-800 mb-6 text-center">
-        My Manifesto
+        Manifesto Highlights
       </h2>
 
       {/* Manifesto Points */}
