@@ -1,6 +1,5 @@
 import React from "react";
 import { motion } from "framer-motion";
-import { Card, CardContent } from "@/components/ui/card"; // ✅ Import for Card
 
 export default function About() {
   return (
@@ -32,12 +31,16 @@ export default function About() {
       <section className="py-12 text-center">
         <h3 className="text-2xl font-bold mb-6">Core Values</h3>
         <div className="flex justify-center gap-6 flex-wrap">
-          {["Transparency", "Compassion", "Honesty"].map((val) => (
-            <Card key={val} className="w-56 shadow-md border-blue-200">
-              <CardContent className="py-6 text-lg font-semibold text-blue-700">
-                {val}
-              </CardContent>
-            </Card>
+          {["Transparency", "Compassion", "Honesty"].map((val, i) => (
+            <motion.div
+              key={val}
+              className="w-56 shadow-md border-2 border-blue-200 rounded-xl py-6 text-lg font-semibold text-blue-700 bg-white hover:bg-blue-50 transition-all"
+              initial={{ opacity: 0, y: 30 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: i * 0.2, duration: 0.5 }}
+            >
+              {val}
+            </motion.div>
           ))}
         </div>
       </section>
