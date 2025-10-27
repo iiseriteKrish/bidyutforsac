@@ -1,52 +1,53 @@
 import React from "react";
+import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import { motion } from "framer-motion";
-import { Card, CardContent } from "@/components/ui/card"; // ✅ import added (for Core Values cards)
 
-export default function About() {
+import Home from "./pages/Home";
+import Manifesto from "./pages/Manifesto";
+import About from "./pages/About";
+import Vision from "./pages/Vision";
+
+export default function App() {
   return (
-    <div>
-      {/* About Section */}
-      <section className="max-w-5xl mx-auto py-16 px-4 grid md:grid-cols-2 gap-10 items-center">
-        <motion.img
-          src="/bidyut-photo.jpg"
-          alt="Bidyut Bhakat"
-          className="rounded-2xl shadow-lg border-4 border-blue-100 object-cover w-full h-96"
-          initial={{ opacity: 0, scale: 0.95 }}
-          animate={{ opacity: 1, scale: 1 }}
-          transition={{ duration: 0.6 }}
-        />
+    <Router>
+      <div className="min-h-screen flex flex-col bg-gray-50 text-gray-900">
+        {/* Navbar */}
+        <nav className="bg-blue-900 text-white shadow-lg sticky top-0 z-50">
+          <div className="max-w-5xl mx-auto px-4 py-3 flex justify-between items-center">
+            <Link to="/" className="text-xl font-bold hover:text-yellow-300 transition-colors">
+              Bidyut Bhakat
+            </Link>
+            <div className="space-x-4">
+              <Link to="/" className="hover:text-yellow-300">Home</Link>
+              <Link to="/manifesto" className="hover:text-yellow-300">Manifesto</Link>
+              <Link to="/about" className="hover:text-yellow-300">About Me</Link>
+              <Link to="/vision" className="hover:text-yellow-300">Vision</Link>
+            </div>
+          </div>
+        </nav>
 
-        <div>
-          <h3 className="text-3xl font-bold text-blue-800 mb-4">About Me</h3>
-          <p className="text-lg leading-relaxed text-gray-700 mb-4">
-            I am <strong>Bidyut Bhakat</strong>, a postgraduate student (23MS227) at IISER Kolkata. Having
-            served as the <strong>Secretary of the Nature Club</strong>, I have first-hand experience in
-            student organization, event logistics, and institutional coordination. I’ve organized bus trips,
-            managed hostel room bookings, and handled administrative permissions and camera repairs —
-            experiences that taught me how the system works and how to make it work better for students.
-          </p>
-          <p className="text-lg leading-relaxed text-gray-700">
-            More importantly, I’m not part of any group or circle of influence. I’m just a regular student —
-            one who has personally faced the same challenges of room allotment, maintenance delays, and
-            communication gaps that most of us deal with. I understand what it means to feel unheard, and
-            that’s exactly what I’m here to change.
-          </p>
-        </div>
-      </section>
+        {/* Animated Page Content */}
+        <motion.main
+          className="flex-grow max-w-5xl mx-auto p-6"
+          initial={{ opacity: 0, y: 30 }}
+          animate={{ opacity: 1, y: 0 }}
+          exit={{ opacity: 0, y: -30 }}
+          transition={{ duration: 0.5 }}
+        >
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/manifesto" element={<Manifesto />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/vision" element={<Vision />} />
+          </Routes>
+        </motion.main>
 
-      {/* Core Values */}
-      <section className="py-12 text-center">
-        <h3 className="text-2xl font-bold mb-6">Core Values</h3>
-        <div className="flex justify-center gap-6 flex-wrap">
-          {["Transparency", "Compassion", "Honesty"].map((val) => (
-            <Card key={val} className="w-56 shadow-md border-blue-200">
-              <CardContent className="py-6 text-lg font-semibold text-blue-700">
-                {val}
-              </CardContent>
-            </Card>
-          ))}
-        </div>
-      </section>
-    </div>
+        {/* Footer */}
+        <footer className="bg-blue-900 text-white text-center py-5">
+          <p className="text-sm">© 2025 Bidyut Bhakat | General Secretary Candidate</p>
+          <p className="text-xs text-blue-200">Built with integrity • React + Tailwind + Motion</p>
+        </footer>
+      </div>
+    </Router>
   );
 }
