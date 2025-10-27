@@ -26,7 +26,7 @@ export default function Home() {
 
       {/* Download Manifesto Button */}
       <motion.a
-        href="https://drive.google.com/uc?export=view&id=1R9SO399_BSGp0UybdKJgS29LX2_2kb6E"
+        href="https://drive.google.com/file/d/1csilOREutM2Wg33yw8DJ5taWm7VA-t1V/view?usp=drivesdk"
         download
         whileHover={{ scale: 1.1 }}
         whileTap={{ scale: 0.95 }}
