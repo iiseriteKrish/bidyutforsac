@@ -9,7 +9,7 @@ import Vision from "./pages/Vision";
 
 export default function App() {
   return (
-    <Router>
+    <Router basename="/bidyutforsac">
       <div className="min-h-screen flex flex-col bg-gray-50 text-gray-900">
         {/* Navbar */}
         <nav className="bg-blue-900 text-white shadow-lg sticky top-0 z-50">
