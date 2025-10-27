@@ -7,7 +7,7 @@ import Vision from "./pages/Vision";
 
 export default function App() {
   return (
-    <Router>
+    <Router basename="/bidyutforsac">
       <div className="min-h-screen bg-gray-50 text-gray-800">
         {/* Navbar */}
         <nav className="flex justify-center gap-6 py-4 bg-blue-700 text-white shadow-md">
@@ -19,13 +19,10 @@ export default function App() {
 
         {/* Routes */}
         <Routes>
-          {/* 👇 This is the default route */}
           <Route path="/" element={<Home />} />
-          <Route path="/vision" element={<Vision/>} />
+          <Route path="/vision" element={<Vision />} />
           <Route path="/about" element={<About />} />
           <Route path="/manifesto" element={<Manifesto />} />
-
-          {/* Optional: catch-all route */}
           <Route path="*" element={<Home />} />
         </Routes>
       </div>
