@@ -44,7 +44,7 @@ export default function Home() {
       >
         {/* Profile Image */}
         <motion.img
-  src="/your-photo.jpg"
+  src="/bidyutforsac/public/your-photo.jpg"
   alt="Bidyut Bhakat"
   className="w-48 h-48 rounded-full mx-auto mb-6 shadow-md border-4 border-blue-200 object-cover object-center bg-gray-100"
   whileHover={{ scale: 1.05 }}
