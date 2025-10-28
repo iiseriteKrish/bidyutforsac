@@ -72,7 +72,7 @@ export default function Manifesto() {
       {/* Download Button */}
       <div className="text-center pt-10">
         <a
-          href="https://drive.google.com/file/d/1YTDC5USYNKCrKEZDl231_pwbnLTMTQZg/view?usp=drive_link" // <-- replace this with your actual manifesto file path
+          href="/bidyutforsac/detailed_manifesto.pdf" // <-- replace this with your actual manifesto file path
           download
           className="inline-block bg-blue-700 text-white px-6 py-3 rounded-lg font-semibold hover:bg-blue-800 transition-all"
         >
