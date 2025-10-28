@@ -30,6 +30,7 @@ export default function Manifesto() {
       "Hygiene & Accountability",
       ["Renovation of bathrooms and washrooms in hostels","Regular hostel hygiene inspections.",
        "Immediate Pest Control of all hostel buildings",
+       "Dog issue will be resolved irrespective of any amount of pressure from pseudo-dog-lovers",
       "Zero tolerance for tampering/diluting with handwash and other amenities."],
     ],
     [
