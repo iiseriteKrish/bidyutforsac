@@ -28,7 +28,8 @@ export default function Manifesto() {
     ],
     [
       "Hygiene & Accountability",
-      ["Regular hostel hygiene inspections.",
+      ["Renovation of bathrooms and washrooms in hostels","Regular hostel hygiene inspections.",
+       "Immediate Pest Control of all hostel buildings",
       "Zero tolerance for tampering/diluting with handwash and other amenities."],
     ],
     [
