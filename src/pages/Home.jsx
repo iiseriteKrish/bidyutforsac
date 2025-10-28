@@ -24,7 +24,8 @@ export default function Home() {
         “Vote for Transparency • Vote for Compassion • Vote for Honesty”
       </p>
 
-      {/* Download Manifesto Button */}
+      <div className="flex justify-center flex-wrap gap-4 mt-8">
+
       <motion.a
         href="/bidyutforsac/manifesto_summary.pdf"
         download
@@ -44,7 +45,9 @@ export default function Home() {
       >
         📄 Download Detailed Manifesto
       </motion.a>
-
+      
+      </div>
+      
       {/* Profile Section */}
       <motion.div
         className="mt-16 max-w-3xl mx-auto bg-white shadow-lg rounded-2xl p-8"
