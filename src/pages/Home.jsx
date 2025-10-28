@@ -26,13 +26,23 @@ export default function Home() {
 
       {/* Download Manifesto Button */}
       <motion.a
-        href="https://drive.google.com/file/d/1csilOREutM2Wg33yw8DJ5taWm7VA-t1V/view?usp=drivesdk"
+        href="/bidyutforsac/manifesto_summary.pdf"
         download
         whileHover={{ scale: 1.1 }}
         whileTap={{ scale: 0.95 }}
         className="inline-block mt-8 px-6 py-3 bg-blue-700 text-white rounded-full shadow-md hover:bg-blue-800 transition-all duration-300"
       >
-        📄 Download Manifesto
+        📄 Download Manifesto Summary
+      </motion.a>
+
+       <motion.a
+        href="/bidyutforsac/detailed_manifesto.pdf"
+        download
+        whileHover={{ scale: 1.1 }}
+        whileTap={{ scale: 0.95 }}
+        className="inline-block mt-8 px-6 py-3 bg-blue-700 text-white rounded-full shadow-md hover:bg-blue-800 transition-all duration-300"
+      >
+        📄 Download Detailed Manifesto
       </motion.a>
 
       {/* Profile Section */}
