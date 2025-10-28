@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 export default function Vision() {
   return (
     <motion.div
-      className="text-center py-12"
+      className="text-center py-12 px-6"
       initial={{ scale: 0.9, opacity: 0 }}
       animate={{ scale: 1, opacity: 1 }}
       transition={{ duration: 0.7 }}
